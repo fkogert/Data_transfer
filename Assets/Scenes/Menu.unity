@@ -270,6 +270,7 @@ GameObject:
   - component: {fileID: 189733166}
   - component: {fileID: 189733165}
   - component: {fileID: 189733164}
+  - component: {fileID: 189733167}
   m_Layer: 5
   m_Name: ButtonStart
   m_TagString: Untagged
@@ -342,8 +343,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1868087645}
-        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+      - m_Target: {fileID: 189733167}
+        m_TargetAssemblyTypeName: ButtonStart, Assembly-CSharp
         m_MethodName: LoadGame
         m_Mode: 1
         m_Arguments:
@@ -392,6 +393,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 189733162}
   m_CullTransparentMesh: 1
+--- !u!114 &189733167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189733162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5de47301e63f2dc4685b2bae27359fe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputName: {fileID: 1863894188}
 --- !u!1 &422716661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,6 +1187,7 @@ GameObject:
   - component: {fileID: 1819367015}
   - component: {fileID: 1819367014}
   - component: {fileID: 1819367013}
+  - component: {fileID: 1819367016}
   m_Layer: 5
   m_Name: ButtonExit
   m_TagString: Untagged
@@ -1245,8 +1260,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1868087645}
-        m_TargetAssemblyTypeName: Manager, Assembly-CSharp
+      - m_Target: {fileID: 1819367016}
+        m_TargetAssemblyTypeName: ButtonExit, Assembly-CSharp
         m_MethodName: GameExit
         m_Mode: 1
         m_Arguments:
@@ -1295,6 +1310,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1819367011}
   m_CullTransparentMesh: 1
+--- !u!114 &1819367016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819367011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 937651ad36ec46741b65fc23083f1e76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1863894186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1307,6 +1334,7 @@ GameObject:
   - component: {fileID: 1863894190}
   - component: {fileID: 1863894189}
   - component: {fileID: 1863894188}
+  - component: {fileID: 1863894191}
   m_Layer: 5
   m_Name: InputName
   m_TagString: Untagged
@@ -1471,6 +1499,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1863894186}
   m_CullTransparentMesh: 1
+--- !u!114 &1863894191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863894186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c904a8992d5c63c47bb9463d5e9506fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputName: {fileID: 1863894188}
 --- !u!1 &1868087644
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,6 +1541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 460f2dcf61ee48b43b5a11caa3a42807, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  yourName: Your Name
   inputName: {fileID: 1863894188}
 --- !u!4 &1868087646
 Transform:
@@ -1642,8 +1684,9 @@ GameObject:
   - component: {fileID: 2027180835}
   - component: {fileID: 2027180837}
   - component: {fileID: 2027180836}
+  - component: {fileID: 2027180838}
   m_Layer: 5
-  m_Name: ScoreBest
+  m_Name: BestScore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1766,3 +1809,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2027180834}
   m_CullTransparentMesh: 1
+--- !u!114 &2027180838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027180834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88ddc52c5476ade4fa001f745da4226c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 2027180836}
