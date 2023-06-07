@@ -7,8 +7,11 @@ using UnityEditor;
 
 public class ButtonExit : MonoBehaviour
 {
+    public ManagerIO managerIO;
     public void GameExit()
     {
+        managerIO.SaveConfig();
+
 #if UNITY_EDITOR
         EditorApplication.ExitPlaymode();
 #else

@@ -1,3 +1,4 @@
+
 public class Manager
 {
     public static string yourName = "Your Name";
